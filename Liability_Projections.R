@@ -112,5 +112,7 @@ ggplot(forecast.payments2) +
 #  geom_bar()# +
 #  geom_point(data = ds, aes(y = mean), colour = 'red', size = 3)
 
+test = c('staories')
+
 
 
