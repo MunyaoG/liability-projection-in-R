@@ -69,7 +69,7 @@ sum(forecast.payments1)
 
 
 ### PART II - BREAKING DOWN THE FORECAST PAYMENTS BY THE YEAR WHEN THEY ARE DUE
-# FILL IN THE RIGHT SIDE OF THE CUMULATIVE TRIANGLE BY APPLYING DFs TO EACH ELEMENT OF THE MATRIX
+# FILL IN THE RIGHT-HAND SIDE OF THE CUMULATIVE TRIANGLE BY APPLYING DFs TO EACH ELEMENT OF THE MATRIX
 ult.cum.tri <- cum.tri
 for (i in 1:n){
   for (j in 1:n){
@@ -79,7 +79,7 @@ for (i in 1:n){
 }
 ult.cum.tri
 
-# FILL IN THE RIGHT OF THE INCREMENTAL TRIANGLE BY 'DECUMULATING' THE ABOVE
+# FILL IN THE RIGHT-HAND SIDE OF THE INCREMENTAL TRIANGLE BY 'DECUMULATING' THE ABOVE
 ult.incr.tri <- incr.tri
 for (i in 1:n){
   for (j in 1:n){
@@ -105,7 +105,7 @@ for (i in 1:(n-1)){forecast.payments2$Discounted[i] = forecast.payments2$Nominal
 testit::assert(sum(forecast.payments1) == sum(forecast.payments2$Nominal)) # A test to check if the forecast tallies with the previous calculation
 forecast.payments2
 
-#### FUCKING CONTINUE FROM HERE.
+#### TO CONTINUE FROM HERE.
 
 ggplot(forecast.payments2) +
   geom_point(aes(FY,Nominal))
